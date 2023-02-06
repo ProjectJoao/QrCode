@@ -15,25 +15,45 @@
       font-size: 15px;
       text-align: center;
     }
+
     .attribution a {
       color: hsl(228, 45%, 44%);
     }
-    main{
+
+    main {
       margin: 2.5rem 0rem;
     }
+
     body {
-      background-color: gray;
+      background-color: rgb(186, 221, 255)
 
     }
-    #divImg{
+    #divImg {
+      display: flex;
+      flex-direction: column;
       text-align: center;
-      
+      width: 300px;
+      margin: auto;
+      height: 400px;
+      padding: 20px;
+      border-radius: 10px;
+      background-color: white;
+      position: relative;
     }
     #img {
+      width: 100%;
+      height: 80%;
+      object-fit: cover;
       background-color: white;
-      padding: 20px;
+      border-radius: 20px;
     }
-    footer{
+    #divImg p {
+      margin-top: 20px;
+      text-align: center;
+      font-size: 20px;
+    }
+
+    footer {
       font-family: 'Outfit', sans-serif;
       padding: 1.6rem;
     }
@@ -42,9 +62,14 @@
 
 <body>
   <main>
+
     <div id="divImg">
+
       <img src="images/image-qr-code.png" alt="" id="img">
-    </div>
+      <p><strong>Gerando o QR-code</strong></p>
+      <p>Desafio feito pelo Front-end Mentor</p>
+
+
   </main>
 
   <footer>
@@ -54,4 +79,6 @@
     </div>
   </footer>
 </body>
+
 </html>
+
